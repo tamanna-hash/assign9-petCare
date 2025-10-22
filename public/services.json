@@ -1,0 +1,74 @@
+[
+  {
+    "serviceId": 1,
+    "serviceName": "Winter Coat Fitting for Dogs",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 25,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
+    "image": "https://i.postimg.cc/example1.png",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 2,
+    "serviceName": "Winter Grooming & Paw Treatment",
+    "providerName": "CozyPets Grooming",
+    "providerEmail": "hello@cozypets.com",
+    "price": 30,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
+    "image": "https://i.postimg.cc/example2.png",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 3,
+    "serviceName": "Pet Heating Bed Setup",
+    "providerName": "WarmPaws Care",
+    "providerEmail": "contact@warmpaws.com",
+    "price": 40,
+    "rating": 4.7,
+    "slotsAvailable": 5,
+    "description": "Installation of heated bedding to keep pets warm during harsh winters.",
+    "image": "https://i.postimg.cc/example3.png",
+    "category": "Accessories"
+  },
+  {
+    "serviceId": 4,
+    "serviceName": "Winter Health Checkup",
+    "providerName": "HealthyPets Clinic",
+    "providerEmail": "services@healthypets.com",
+    "price": 50,
+    "rating": 4.9,
+    "slotsAvailable": 2,
+    "description": "Comprehensive winter health checkup including cold-weather vaccinations and supplements.",
+    "image": "https://i.postimg.cc/example4.png",
+    "category": "Healthcare"
+  },
+  {
+    "serviceId": 5,
+    "serviceName": "Snow Play Safety Training",
+    "providerName": "ActivePaws Training",
+    "providerEmail": "training@activepaws.com",
+    "price": 35,
+    "rating": 4.6,
+    "slotsAvailable": 6,
+    "description": "Training sessions to ensure pets can safely enjoy snow and icy conditions.",
+    "image": "https://i.postimg.cc/example5.png",
+    "category": "Training"
+  },
+  {
+    "serviceId": 6,
+    "serviceName": "Winter Diet & Nutrition Plan",
+    "providerName": "NutriPets",
+    "providerEmail": "nutrition@nutripets.com",
+    "price": 45,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Personalized winter diet plans to boost immunity and maintain energy in cold months.",
+    "image": "https://i.postimg.cc/example6.png",
+    "category": "Nutrition"
+  }
+]
