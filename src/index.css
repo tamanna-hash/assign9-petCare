@@ -8,9 +8,37 @@
 .fredoka {
   font-family: "Fredoka", sans-serif;
 }
-ul a{
+
+ul a {
   @apply text-blue-900
 }
-ul a.active{
+
+ul a.active {
   @apply underline underline-offset-4
+}
+
+.title {
+  @apply text-3xl mb-2 md:mb-12 font-bold text-center
+}
+
+.tips {
+  @apply flex gap-2 items-start mb-2
+}
+
+.tips p {
+  @apply flex gap-2 text-gray-500 text-justify leading-relaxed
+}
+
+.tips h1 {
+  @apply font-bold text-[#0b347b] 
+}
+.max-container{
+ @apply max-w-[1200px] mx-auto my-4 py-3 md:pt-6 md:pb-12 md:my-8 flex justify-center
+}
+/* what we are best in section */
+.best-h1{
+  @apply text-xl font-semibold text-center text-blue-950
+}
+.best-i{
+  @apply h-8 w-8 md:h-12 md:w-12 text-blue-800
 }

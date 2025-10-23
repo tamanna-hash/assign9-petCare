@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Emma Collins",
+    "specialization": "Small Animal Medicine",
+    "experience": "8 years",
+    "email": "emma.collins@pawcare.com",
+    "rating": 4.9,
+    "image": "https://i.ibb.co.com/RkZDcZ50/close-up-veterinarian-taking-care-cat.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Dr. Liam Roberts",
+    "specialization": "Surgery & Orthopedics",
+    "experience": "10 years",
+    "email": "liam.roberts@pawcare.com",
+    "rating": 4.8,
+    "image": "https://i.ibb.co.com/PvZZwHps/happy-female-veterinarian-with-dog-table-showing-thumbup-sign.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Dr. Sophia Nguyen",
+    "specialization": "Exotic Pets & Birds",
+    "experience": "6 years",
+    "email": "sophia.nguyen@pawcare.com",
+    "rating": 4.7,
+    "image": "https://i.ibb.co.com/KzjWmPDs/expert1.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Dr. Ethan Patel",
+    "specialization": "Dermatology & Nutrition",
+    "experience": "9 years",
+    "email": "ethan.patel@pawcare.com",
+    "rating": 5.0,
+    "image": "https://i.ibb.co.com/gMy8WxgP/close-up-veterinarian-taking-care-dog.jpg"
+  }
+]

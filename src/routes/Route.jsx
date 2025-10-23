@@ -6,7 +6,7 @@ import MyProfile from "../pages/MyProfile";
 import AuthLayout from "../layouts/AuthLayout";
 import Login from "../pages/Login";
 import SignUp from "../pages/SignUp";
-
+import ServiceDetails from '../pages/ServiceDetails'
 
 export const route = createBrowserRouter([
     {
@@ -14,7 +14,7 @@ export const route = createBrowserRouter([
         element: <HomeLayout></HomeLayout>,
         children: [
             {
-                index:true,
+                index: true,
                 element: <Home></Home>
             },
             {
@@ -40,6 +40,15 @@ export const route = createBrowserRouter([
                 element: <SignUp></SignUp>
             }
         ]
-    }
+    },
+    {
+        path: "/service-details/:id",
+        element: (
+            // <PrivateRoute>
+                <ServiceDetails></ServiceDetails>
+            // </PrivateRoute>
+        ),
+         loader: () => fetch("/services.json"),
+    },
 
 ])
