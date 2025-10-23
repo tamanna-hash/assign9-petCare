@@ -1,9 +1,16 @@
 import React from 'react';
+import Services from '../pages/Services'
+import Header from '../components/header/Header';
+import Tips from '../components/Tips';
+import Experts from '../components/Experts';
 
 const Home = () => {
     return (
-        <div className='fredoka text-5xl'>
-            Home
+        <div className=''>
+            {/* <Header></Header> */}
+            <Services></Services>
+            <Tips></Tips>
+            <Experts></Experts>
         </div>
     );
 };

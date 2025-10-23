@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Footer = () => {
+const Tips = () => {
     return (
         <div>
-            footer
+            tips
         </div>
     );
 };
 
-export default Footer;
+export default Tips;
