@@ -19,6 +19,7 @@ const Header = () => {
                                     <h1 className='text-4xl md:text-7xl text-[#c19e6a] font-bold '>Love, Care & <br /> Pawsitivity
                                     </h1>
                                     <p className='font-bold text-xl text-[#766242]'>Your pet’s care, our priority</p>
+                                    <p className='font-bold text-xl text-[#766242]'>Every Pet Matters</p>
                                 </div>
                                 <img src={cat1} className=" h-[180px] w-[180px] md:h-[400px] md:w-[400px] rounded-[50%]" />
                             </div>

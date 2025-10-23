@@ -45,10 +45,13 @@ export const route = createBrowserRouter([
         path: "/service-details/:id",
         element: (
             // <PrivateRoute>
-                <ServiceDetails></ServiceDetails>
+            <ServiceDetails></ServiceDetails>
             // </PrivateRoute>
         ),
-         loader: () => fetch("/services.json"),
+        loader: () => fetch("/services.json"),
     },
-
+    {
+        path: "/*",
+        element: <h2>Error404</h2>,
+    },
 ])

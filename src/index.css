@@ -42,3 +42,6 @@ ul a.active {
 .best-i{
   @apply h-8 w-8 md:h-12 md:w-12 text-blue-800
 }
+.i{
+  @apply h-6 w-6 hover:bg-blue-900 hover:text-white rounded-2xl text-gray-700
+}

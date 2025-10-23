@@ -4,7 +4,7 @@ import { CiStar } from 'react-icons/ci';
 import { Link } from 'react-router';
 
 const ServiceCard = ({ service }) => {
-    console.log(service);
+
     const { serviceId, serviceName, price, rating, image } = service
     return (
         <div>
