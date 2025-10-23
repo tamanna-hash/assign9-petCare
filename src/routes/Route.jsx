@@ -7,11 +7,15 @@ import AuthLayout from "../layouts/AuthLayout";
 import Login from "../pages/Login";
 import SignUp from "../pages/SignUp";
 import ServiceDetails from '../pages/ServiceDetails'
+import PrivateRoute from "../provider/PrivateRoute";
+import Loading from "../pages/Loading";
+import ErrorPage from "../pages/ErrorPage";
 
 export const route = createBrowserRouter([
     {
         path: '/',
-        element: <HomeLayout></HomeLayout>,
+        element: <HomeLayout />,
+        hydrateFallbackElement: <Loading />,
         children: [
             {
                 index: true,
@@ -23,7 +27,9 @@ export const route = createBrowserRouter([
             },
             {
                 path: '/profile',
-                element: <MyProfile></MyProfile>
+                element: <PrivateRoute>
+                    <MyProfile></MyProfile>
+                </PrivateRoute>
             }
         ]
     },
@@ -44,14 +50,14 @@ export const route = createBrowserRouter([
     {
         path: "/service-details/:id",
         element: (
-            // <PrivateRoute>
-            <ServiceDetails></ServiceDetails>
-            // </PrivateRoute>
+            <PrivateRoute>
+                <ServiceDetails></ServiceDetails>
+            </PrivateRoute>
         ),
         loader: () => fetch("/services.json"),
     },
     {
         path: "/*",
-        element: <h2>Error404</h2>,
+        element: <ErrorPage />,
     },
 ])

@@ -44,17 +44,26 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    {/* <div className="login-btn flex gap-5">
-                        <img
-                            className="w-12 rounded-full"
-                            src={`${user && user.photoURL }`}
-                            alt=""
-                        />
-                        </div> */}
                     {user ? (
-                        <button onClick={handleLogOut} className="btn px-5  hover:bg-blue-200  bg-blue-100 text-blue-500 ">
-                            LogOut
-                        </button>
+                        <div className="login-btn flex gap-2 md:gap-5">
+                            <div className="tooltip tooltip-bottom ">
+                                <div className="tooltip-content bg-blue-100">
+                                    <div className=" text-blue-950 text-lg">{user.displayName}</div>
+                                </div>
+                                <div>
+                                    <img
+                                        className="w-12 h-12 rounded-[50%]"
+                                        src={`${user && user.photoURL}`}
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+
+                            <button onClick={handleLogOut} className="btn px-5  hover:bg-blue-200  bg-blue-100 text-blue-500 ">
+                                LogOut
+                            </button>
+                        </div>
+
                     ) : (
                         <>
                             <button className="btn px-5  hover:bg-blue-200  bg-blue-100 font-semibold text-blue-500 ">

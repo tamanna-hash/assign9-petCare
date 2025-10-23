@@ -22,7 +22,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='flex items-center gap-2'>
-                        <p className='text-gray-600'>Follow us on  ----</p>
+                        <p className='text-gray-500 text-sm font-semibold'>Follow us on  ----</p>
                         <TiSocialFacebook className='i' />
                         <TiSocialTwitter className='i' />
                         <FaInstagram className='i ' />
