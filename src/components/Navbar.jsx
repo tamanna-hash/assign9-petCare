@@ -1,14 +1,15 @@
 import React, { use } from 'react';
 import { Link, NavLink } from 'react-router';
-import { AuthContext } from '../provider/AuthProvider';
+import { AuthContext } from '../provider/AuthContext';
 import logo2 from '../assets/logo1.png'
+import toast from 'react-hot-toast';
 const Navbar = () => {
-    const { user, logOut } = use(AuthContext);
+    const { user,  signoutUserFunc } = use(AuthContext);
     const handleLogOut = () => {
         console.log("user trying to LogOut");
-        logOut()
+        signoutUserFunc()
             .then(() => {
-                alert("You Logged Out successfully");
+                toast.success("You Logged Out successfully");
             })
             .catch((error) => {
                 console.log(error);
@@ -34,7 +35,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className='flex gap-2 items-center'>
-                        <img src={logo2} alt="" className='h-[40px] w-[40px] rounded-[50%]' />
+                        <img src={logo2} alt="" className='h-[40px] w-[40px] rounded-[50%] animate__animated animate__fadeIn' />
                         <Link to='/home' className="text-xl fredoka font-bold text-blue-400">PawfectCare</Link>
                     </div>
                 </div>
