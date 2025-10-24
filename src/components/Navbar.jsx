@@ -7,13 +7,12 @@ import { PuffLoader } from 'react-spinners';
 const Navbar = () => {
     const { user,  signoutUserFunc, loading } = use(AuthContext);
     const handleLogOut = () => {
-        console.log("user trying to LogOut");
         signoutUserFunc()
             .then(() => {
                 toast.success("You Logged Out successfully");
             })
             .catch((error) => {
-                console.log(error);
+                toast.error(error);
             });
     };
     const links = <>
@@ -27,7 +26,7 @@ const Navbar = () => {
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="md:h-5 md:w-5 h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
                         </div>
                         <ul
                             tabIndex="-1"
@@ -35,7 +34,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <div className='flex gap-2 items-center'>
+                    <div className='flex flex-col md:flex-row gap-2 items-center'>
                         <img src={logo2} alt="" className='md:h-[40px] md:w-[40px] h-[20px] w-[20px] rounded-[50%] animate__animated animate__bounce' />
                         <Link to='/home' className="md:text-xl fredoka font-bold text-blue-400">PawfectCare</Link>
                     </div>
@@ -54,13 +53,13 @@ const Navbar = () => {
                                 </div>
                                 <div>
                                     <img
-                                        className="w-12 h-12 rounded-[50%]"
+                                        className="md:w-12 md:h-12 h-8 w-8 rounded-[50%]"
                                         src={`${user && user.photoURL}`}
                                         alt=""
                                     />
                                 </div>
                             </div>
-                            <button onClick={handleLogOut} className="btn md:px-5  hover:bg-blue-200  bg-blue-100 text-blue-500 ">
+                            <button onClick={handleLogOut} className="btn btn-xs md:btn-md md:px-5  hover:bg-blue-200  bg-blue-100 text-blue-500 ">
                                 LogOut
                             </button>
                         </div>

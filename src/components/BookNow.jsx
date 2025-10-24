@@ -11,7 +11,7 @@ const BookNow = () => {
     return (
         <div>
             {visible &&
-                <div className='bg-[#e6efff] p-7 md:p-12 rounded-3xl'>
+                <div className='bg-[#e6efff] p-4  md:p-12 rounded-3xl'>
                     <form onSubmit={handleLogin} className="card-body">
                         <fieldset className="fieldset">
                             <h1 className='text-center text-2xl'>Book Service</h1>
@@ -33,7 +33,7 @@ const BookNow = () => {
                                 placeholder="Email"
                                 required
                             />
-                            <button type="submit" className="btn mt-4">
+                            <button type="submit" className="btn btn-sm md:btn-md mt-4">
                                 Book Now
                             </button>
                         </fieldset>

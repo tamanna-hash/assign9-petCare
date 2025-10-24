@@ -16,9 +16,9 @@ ul a {
 ul a.active {
   @apply underline underline-offset-4
 }
-
+/* title here */
 .title {
-  @apply text-3xl mb-2 md:mb-12 font-bold text-center
+  @apply text-xl md:text-3xl mb-2 md:mb-12 font-bold text-center
 }
 
 .tips {
@@ -26,7 +26,7 @@ ul a.active {
 }
 
 .tips p {
-  @apply flex gap-2 text-gray-500 text-justify leading-relaxed
+  @apply flex text-xs md:text-base gap-2 text-gray-500 text-justify leading-relaxed
 }
 
 .tips h1 {
@@ -39,11 +39,11 @@ ul a.active {
 
 /* what we are best in section */
 .best-h1 {
-  @apply text-xl font-semibold text-center text-blue-950
+  @apply md:text-xl font-semibold text-center text-blue-950
 }
 
 .best-i {
-  @apply h-8 w-8 md:h-12 md:w-12 text-blue-800
+  @apply h-5 w-5  md:h-12 md:w-12 text-blue-800
 }
 
 .i {
@@ -55,15 +55,15 @@ ul a.active {
 }
 
 .slide-container-c {
-  @apply flex items-center my-6 gap-2 mx-auto w-full justify-between
+  @apply flex items-center my-6 gap-2 mx-auto w-full justify-around lg:justify-between
 }
 
 .slide-container-c-c {
-  @apply flex md:gap-6 flex-col gap-2 items-center justify-center
+  @apply flex md:gap-3 lg:gap-6 flex-col gap-2 items-center justify-center
 }
 
 .slide-container h1 {
-  @apply text-2xl font-bold md:text-7xl
+  @apply text-2xl font-bold md:text-5xl lg:text-7xl
 }
 
 .slide-container p {
@@ -71,5 +71,5 @@ ul a.active {
 }
 
 .slide-container-c img {
-  @apply h-[110px] w-[110px]  md:h-[400px] md:w-[400px] rounded-[50%]
+  @apply h-[110px] w-[110px]  md:h-[300px] md:w-[300px] lg:h-[400px] lg:w-[400px] rounded-[50%]
 }

@@ -18,7 +18,7 @@ const Header = () => {
                                 <div className='slide-container-c-c '>
                                     <h1 className='text-[#c19e6a]  '>Love, Care & <br /> Pawsitivity
                                     </h1>
-                                    <p className=' text-[#766242]'>Your pet’s care, our priority</p>
+                                    <p className=' text-[#aa8e61]'>Your pet’s care, our priority</p>
                                     <p className=' text-[#766242]'>Every Pet Matters</p>
                                 </div>
                                 <img src={cat1} className="" />
@@ -46,7 +46,18 @@ const Header = () => {
                                 <img src={dog2} className="" />
                             </div>
                         </div>
-                        <div id="slide4" className="bg-[#fffbf4] slide-container carousel-item">
+                        <div id="slide4" className="bg-[#ffe2ec] slide-container carousel-item">
+                            <div className='slide-container-c '>
+                                <div className='slide-container-c-c '>
+                                    <h1 className=' text-[#e09cc1]'>Love, Care & <br /> Pawsitivity
+                                    </h1>
+                                    <p className='text-[#a86489]'>Your pet’s care, our priority</p>
+                                    <p className='text-[#9c3f73]'>Every Pet Matters</p>
+                                </div>
+                                <img src={bird1} className="" />
+                            </div>
+                        </div>
+                        <div id="slide5" className="bg-[#fffbf4] slide-container carousel-item">
                             <div className='slide-container-c '>
                                 <div className='slide-container-c-c '>
                                     <h1 className='text-[#beab8f]'>Love, Care & <br /> Pawsitivity
@@ -58,17 +69,6 @@ const Header = () => {
                             </div>
                         </div>
 
-                        <div id="slide5" className="bg-[#ffe2ec] slide-container carousel-item">
-                            <div className='slide-container-c '>
-                                <div className='slide-container-c-c '>
-                                    <h1 className=' text-[#e09cc1]'>Love, Care & <br /> Pawsitivity
-                                    </h1>
-                                    <p className='text-[#e09cc1]'>Your pet’s care, our priority</p>
-                                    <p className='text-[#9c3f73]'>Every Pet Matters</p>
-                                </div>
-                                <img src={bird1} className="" />
-                            </div>
-                        </div>
 
                         <div id="slide6" className=" bg-[#d2e2eb] slide-container carousel-item">
                             <div className='slide-container-c '>

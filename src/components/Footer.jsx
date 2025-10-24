@@ -10,11 +10,11 @@ const Footer = () => {
             <footer className=" bg-[#E5EEFF] py-3">
                 <div className='flex flex-col md:flex-row gap-2 justify-between  px-7'>
                     <div className='flex gap-2 items-center'>
-                        <img src={logo2} alt="" className='h-[40px] w-[40px] rounded-[50%]' />
-                        <Link to='/home' className="text-xl fredoka font-bold text-blue-400">PawfectCare</Link>
+                        <img src={logo2} alt="" className='md:h-[40px] md:w-[40px] h-[20px] w-[20px] rounded-[50%]' />
+                        <Link to='/home' className="md:text-xl fredoka font-bold text-blue-400">PawfectCare</Link>
                     </div>
                     <div className='text-gray-700 flex gap-2'>
-                        <div className='flex flex-col md:flex-row items-center gap-2 text-xs md:text-sm text-gray-500'>
+                        <div className='flex flex-col lg:flex-row items-center gap-2 text-xs md:text-sm text-gray-500'>
                             <a className="link link-hover">Contact info</a>
                             <a className="link link-hover">Privacy policy</a>
                             <a className="link link-hover">Cookie policy</a>

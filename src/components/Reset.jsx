@@ -21,6 +21,7 @@ const Reset = () => {
             .then(() => {
                 setLoading(false);
                 toast.success("Check your email to reset your password.");
+                window.open("https://mail.google.com", "_blank");
                 navigate("/auth/login");
             })
             .catch((e) => toast.error(e.message));
@@ -33,7 +34,7 @@ const Reset = () => {
                 <div className='bg-[#e6efff] p-5 md:p-8 rounded-3xl'>
                     <form onSubmit={handleReset} className="card-body w-[200px] md:w-[400px]">
                         <fieldset className="fieldset">
-                            <h1 className='text-center text-2xl'>Reset Password</h1>
+                            <h1 className='text-center text-lg md:text-2xl'>Reset Password</h1>
                             {/* email  */}
                             <label className="label">Email</label>
                             <input
@@ -46,7 +47,7 @@ const Reset = () => {
                                 required
                             />
 
-                            <button type='submit' className="btn text-blue-800 mt-4">
+                            <button type='submit' className="btn btn-sm md:btn-md text-blue-800 mt-4">
                                 Reset
                             </button>
                         </fieldset>
