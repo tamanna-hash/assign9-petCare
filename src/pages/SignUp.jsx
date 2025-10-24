@@ -10,7 +10,6 @@ const SignUp = () => {
   const {
     createUserWithEmailAndPasswordFunc,
     updateProfileFunc,
-    sendEmailVerificationFunc,
     setLoading,
     signoutUserFunc,
     setUser,
@@ -51,22 +50,22 @@ const SignUp = () => {
         // 2nd step: Update profile
         updateProfileFunc(displayName, photoURL)
           .then(() => {
-            console.log(res);
+             
             // 3rd step: Email verification
-            sendEmailVerificationFunc()
-              .then((res) => {
-                console.log(res);
-                setLoading(false);
+            // sendEmailVerificationFunc()
+            //   .then((res) => {
+            //     console.log(res);
+            //     setLoading(false);
 
                 // Signout user
                 signoutUserFunc().then(() => {
                   toast.success(
-                    "Signup successful. Check your email to validate your account. "
+                    "Signup successful.Please login Now"
                   );
                   setUser(null);
-                  navigate("/signin");
-                });
-              })
+                  navigate("/auth/login");
+                })
+              // })
               .catch((e) => {
                 console.log(e);
                 toast.error(e.message);
@@ -107,7 +106,7 @@ const SignUp = () => {
   };
   return (
     <>
-      <div className="flex justify-center min-h-screen items-center">
+      <div className="bg-[#f4f7fd] py-4 flex justify-center min-h-screen items-center">
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl py-5">
           <h2 className="font-semibold text-2xl text-center">
             Register your account

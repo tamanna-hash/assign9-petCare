@@ -10,6 +10,7 @@ import ServiceDetails from '../pages/ServiceDetails'
 import PrivateRoute from "../provider/PrivateRoute";
 import Loading from "../pages/Loading";
 import ErrorPage from "../pages/ErrorPage";
+import Reset from "../components/Reset";
 
 export const route = createBrowserRouter([
     {
@@ -44,7 +45,12 @@ export const route = createBrowserRouter([
             {
                 path: '/auth/signup',
                 element: <SignUp></SignUp>
+            },
+            {
+                path: '/auth/reset',
+                element: <Reset/>
             }
+         
         ]
     },
     {

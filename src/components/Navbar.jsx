@@ -3,8 +3,9 @@ import { Link, NavLink } from 'react-router';
 import { AuthContext } from '../provider/AuthContext';
 import logo2 from '../assets/logo1.png'
 import toast from 'react-hot-toast';
+import { PuffLoader } from 'react-spinners';
 const Navbar = () => {
-    const { user,  signoutUserFunc } = use(AuthContext);
+    const { user,  signoutUserFunc, loading } = use(AuthContext);
     const handleLogOut = () => {
         console.log("user trying to LogOut");
         signoutUserFunc()
@@ -45,7 +46,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    {user ? (
+                    {loading?<PuffLoader />:user ? (
                         <div className="login-btn flex gap-2 md:gap-5">
                             <div className="tooltip tooltip-bottom ">
                                 <div className="tooltip-content bg-blue-100">
@@ -59,7 +60,6 @@ const Navbar = () => {
                                     />
                                 </div>
                             </div>
-
                             <button onClick={handleLogOut} className="btn px-5  hover:bg-blue-200  bg-blue-100 text-blue-500 ">
                                 LogOut
                             </button>

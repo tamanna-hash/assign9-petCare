@@ -18,17 +18,17 @@ const Login = () => {
   const location = useLocation();
   const from = location.state || "/";
   const navigate = useNavigate();
-
-  // if (user) {
-  //   navigate("/");
-  //   return;
-  // }
-
-
   const emailRef = useRef(null);
 
-  // const [email, setEmail] = useState(null);
+  if (user) {
+    navigate("/");
+    return;
+  }
 
+const handleForgotPassword = () => {
+  const email = emailRef.current?.value || "";
+  navigate("/auth/reset", { state: { email } });
+};
   const handleSignin = (e) => {
     e.preventDefault();
     const email = e.target.email?.value;
@@ -37,7 +37,7 @@ const Login = () => {
       .then((res) => {
         setLoading(false);
         setUser(res.user);
-        toast.success("Signin successful");
+        toast.success("Login successfully");
         navigate(`${location.state ? location.state : "/"}`);
       })
       .catch((e) => {
@@ -53,23 +53,10 @@ const Login = () => {
         setLoading(false);
         setUser(res.user);
         navigate(from);
-        toast.success("Signin successful");
+        toast.success("Login successfully");
       })
       .catch((e) => {
         console.log(e);
-        toast.error(e.message);
-      });
-  };
-
-  const handleForgetPassword = () => {
-    console.log();
-    const email = emailRef.current.value;
-    sendPassResetEmailFunc(email)
-      .then((res) => {
-        setLoading(false);
-        toast.success("Check your email to reset password");
-      })
-      .catch((e) => {
         toast.error(e.message);
       });
   };
@@ -78,7 +65,7 @@ const Login = () => {
 
   return (
     <>
-      <div className="flex justify-center min-h-screen items-center">
+      <div className=" bg-[#f4f7fd] py-4 flex justify-center min-h-screen items-center">
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl py-5">
           <h2 className="font-semibold text-2xl text-center">
             Login your account
@@ -90,6 +77,7 @@ const Login = () => {
               <input
                 name="email"
                 type="email"
+                ref={emailRef}
                 className="input"
                 placeholder="Email"
                 required
@@ -112,8 +100,15 @@ const Login = () => {
                 </span>
               </div>
               <div>
-                <a  onClick={handleForgetPassword} className="link link-hover">Forgot password?</a>
+                <button
+                  type="button"
+                  onClick={handleForgotPassword}
+                  className="link link-hover"
+                >
+                  Forgot password?
+                </button>
               </div>
+
 
               <button type="submit" className="btn bg-blue-100 mt-4 hover:scale-102">
                 Login
