@@ -11,73 +11,74 @@ const Header = () => {
     return (
         <div className=''>
             <div className=''>
-                <div className="carousel w-full overflow-hidden h-[450px] ">
-                    <div className="flex flex-col animate-slide">
-                        <div id="slide1" className="carousel-item px-2 md:px-7 bg-[#fff3e1] relative w-full h-[450px] object-cover ">
-                            <div className='flex fredoka items-center my-6 gap-2 max-w-[1200px] mx-auto w-full justify-between'>
-                                <div className='flex flex-col gap-2 md:gap-6 items-center justify-center'>
-                                    <h1 className='text-4xl md:text-7xl text-[#c19e6a] font-bold '>Love, Care & <br /> Pawsitivity
+                <div className="carousel fredoka w-full overflow-hidden h-[200px] md:h-[450px] ">
+                    <div className="flex flex-col animate-slide max-w-[1200px] ">
+                        <div id="slide1" className="slide-container carousel-item bg-[#fff3e1] ">
+                            <div className='slide-container-c '>
+                                <div className='slide-container-c-c '>
+                                    <h1 className='text-[#c19e6a]  '>Love, Care & <br /> Pawsitivity
                                     </h1>
-                                    <p className='font-bold text-xl text-[#766242]'>Your pet’s care, our priority</p>
-                                    <p className='font-bold text-xl text-[#766242]'>Every Pet Matters</p>
+                                    <p className=' text-[#766242]'>Your pet’s care, our priority</p>
+                                    <p className=' text-[#766242]'>Every Pet Matters</p>
                                 </div>
-                                <img src={cat1} className=" h-[180px] w-[180px] md:h-[400px] md:w-[400px] rounded-[50%]" />
+                                <img src={cat1} className="" />
                             </div>
                         </div>
-                        <div id="slide2" className="carousel-item px-2 md:px-7 bg-[#f0fcff] relative w-full h-[450px] object-cover">
-                            <div className='flex fredoka items-center my-6 gap-2 max-w-[1200px] mx-auto w-full justify-between'>
-                                <div className='flex flex-col gap-2 md:gap-6 items-center justify-center'>
-                                    <h1 className='text-4xl md:text-7xl text-[#88b9d9] font-bold '>Love, Care & <br /> Pawsitivity
+                        <div id="slide2" className="bg-[#f0fcff] slide-container carousel-item">
+                            <div className='slide-container-c '>
+                                <div className='slide-container-c-c '>
+                                    <h1 className=' text-[#88b9d9]'>Love, Care & <br /> Pawsitivity
                                     </h1>
-                                    <p className='font-bold text-xl md:ml-3 text-[#4e98b3]'>Your pet’s care, our priority</p>
-                                    <p className='font-bold text-xl text-[#3a7990]'>Every Pet Matters</p>
+                                    <p className='text-[#4e98b3]'>Your pet’s care, our priority</p>
+                                    <p className=' text-[#3a7990]'>Every Pet Matters</p>
                                 </div>
-                                <img src={cat4} className=" h-[180px] w-[180px] md:h-[400px] md:w-[400px] rounded-[50%]" />
+                                <img src={cat4} className="" />
                             </div>
                         </div>
-                        <div id="slide3" className="carousel-item px-2 md:px-7 bg-[#fffbf4] relative w-full h-[450px] object-cover">
-                            <div className='flex fredoka items-center my-6 gap-2 max-w-[1200px] mx-auto w-full justify-between'>
-                                <div className='flex flex-col gap-2 md:gap-6 items-center justify-center'>
-                                    <h1 className='text-4xl md:text-7xl text-[#beab8f] font-bold '>Love, Care & <br /> Pawsitivity
+                        <div id="slide3" className=" bg-[#d2cdc7] slide-container carousel-item">
+                            <div className='slide-container-c '>
+                                <div className='slide-container-c-c '>
+                                    <h1 className='text-[#a48e74]'>Love, Care & <br /> Pawsitivity
                                     </h1>
-                                    <p className='font-bold text-xl md:ml-3 text-[#968364]'>Your pet’s care, our priority</p>
-                                    <p className='font-bold text-xl text-[#766242]'>Every Pet Matters</p>
+                                    <p className='text-[#766754]'>Your pet’s care, our priority</p>
+                                    <p className='text-[#6d573a]'>Every Pet Matters</p>
                                 </div>
-                                <img src={dog1} className=" h-[180px] w-[180px] md:h-[400px] md:w-[400px] rounded-[50%]" />
+                                <img src={dog2} className="" />
+                            </div>
+                        </div>
+                        <div id="slide4" className="bg-[#fffbf4] slide-container carousel-item">
+                            <div className='slide-container-c '>
+                                <div className='slide-container-c-c '>
+                                    <h1 className='text-[#beab8f]'>Love, Care & <br /> Pawsitivity
+                                    </h1>
+                                    <p className='text-[#968364]'>Your pet’s care, our priority</p>
+                                    <p className=' text-[#766242] '>Every Pet Matters</p>
+                                </div>
+                                <img src={dog1} className="" />
                             </div>
                         </div>
 
-                        <div id="slide4" className="carousel-item px-2 md:px-7 bg-[#ffe2ec] relative w-full h-[450px] object-cover">
-                            <div className='flex fredoka items-center my-6 gap-2 max-w-[1200px] mx-auto w-full justify-between'>
-                                <div className='flex flex-col gap-2 md:gap-6 items-center justify-center'>
-                                    <h1 className='text-4xl md:text-7xl text-[#e09cc1] font-bold '>Love, Care & <br /> Pawsitivity
+                        <div id="slide5" className="bg-[#ffe2ec] slide-container carousel-item">
+                            <div className='slide-container-c '>
+                                <div className='slide-container-c-c '>
+                                    <h1 className=' text-[#e09cc1]'>Love, Care & <br /> Pawsitivity
                                     </h1>
-                                    <p className='font-bold text-xl md:ml-3 text-[#e09cc1]'>Your pet’s care, our priority</p>
-                                    <p className='font-bold text-xl text-[#9c3f73]'>Every Pet Matters</p>
+                                    <p className='text-[#e09cc1]'>Your pet’s care, our priority</p>
+                                    <p className='text-[#9c3f73]'>Every Pet Matters</p>
                                 </div>
-                                <img src={bird1} className=" h-[180px] w-[180px] md:h-[400px] md:w-[400px] rounded-[50%]" />
+                                <img src={bird1} className="" />
                             </div>
                         </div>
-                        <div id="slide5" className="carousel-item px-2 md:px-7 bg-[#d2cdc7] relative w-full h-[450px] object-cover">
-                            <div className='flex fredoka items-center my-6 gap-2 max-w-[1200px] mx-auto w-full justify-between'>
-                                <div className='flex flex-col gap-2 md:gap-6 items-center justify-center'>
-                                    <h1 className='text-4xl md:text-7xl text-[#a48e74] font-bold '>Love, Care & <br /> Pawsitivity
+
+                        <div id="slide6" className=" bg-[#d2e2eb] slide-container carousel-item">
+                            <div className='slide-container-c '>
+                                <div className='slide-container-c-c '>
+                                    <h1 className='text-[#73a6c4]'>Love, Care & <br /> Pawsitivity
                                     </h1>
-                                    <p className='font-bold text-xl md:ml-3 text-[#766754]'>Your pet’s care, our priority</p>
-                                    <p className='font-bold text-xl text-[#6d573a]'>Every Pet Matters</p>
+                                    <p className='text-[#53788f]'>Your pet’s care, our priority</p>
+                                    <p className='text-[#3c5f75]'>Every Pet Matters</p>
                                 </div>
-                                <img src={dog2} className=" h-[180px] w-[180px] md:h-[400px] md:w-[400px] rounded-[50%]" />
-                            </div>
-                        </div>
-                        <div id="slide6" className="carousel-item px-2 md:px-7 bg-[#d2e2eb] relative w-full h-[450px] object-cover">
-                            <div className='flex fredoka items-center my-6 gap-2 max-w-[1200px] mx-auto w-full justify-between'>
-                                <div className='flex flex-col gap-2 md:gap-6 items-center justify-center'>
-                                    <h1 className='text-4xl md:text-7xl text-[#73a6c4] font-bold '>Love, Care & <br /> Pawsitivity
-                                    </h1>
-                                    <p className='font-bold text-xl md:ml-3 text-[#53788f]'>Your pet’s care, our priority</p>
-                                    <p className='font-bold text-xl text-[#3c5f75]'>Every Pet Matters</p>
-                                </div>
-                                <img src={cat5} className=" h-[180px] w-[180px] md:h-[400px] md:w-[400px] rounded-[50%]" />
+                                <img src={cat5} className="" />
                             </div>
                         </div>
                     </div>

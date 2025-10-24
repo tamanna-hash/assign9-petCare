@@ -30,18 +30,46 @@ ul a.active {
 }
 
 .tips h1 {
-  @apply font-bold text-[#0b347b] 
+  @apply font-bold text-[#0b347b]
 }
-.max-container{
- @apply max-w-[1200px] mx-auto my-4 py-3 md:pt-6 md:pb-12 md:my-8 flex justify-center
+
+.max-container {
+  @apply max-w-[1200px] mx-auto my-4 py-3 md:pt-6 md:pb-12 md:my-8 flex justify-center
 }
+
 /* what we are best in section */
-.best-h1{
+.best-h1 {
   @apply text-xl font-semibold text-center text-blue-950
 }
-.best-i{
+
+.best-i {
   @apply h-8 w-8 md:h-12 md:w-12 text-blue-800
 }
-.i{
-  @apply h-6 w-6 hover:bg-blue-900 hover:text-white rounded-2xl text-gray-700
+
+.i {
+  @apply h-4 w-4 md:h-6 md:w-6 hover:bg-blue-900 hover:text-white rounded-2xl text-gray-700
+}
+/* header style */
+.slide-container {
+  @apply md:px-7 md:h-[450px] relative w-full h-[200px] object-cover
+}
+
+.slide-container-c {
+  @apply flex items-center my-6 gap-2 mx-auto w-full justify-between
+}
+
+.slide-container-c-c {
+  @apply flex md:gap-6 flex-col gap-2 items-center justify-center
+}
+
+.slide-container h1 {
+  @apply text-2xl font-bold md:text-7xl
+}
+
+.slide-container p {
+  @apply font-bold text-sm md:text-xl
+}
+
+.slide-container-c img {
+  @apply h-[110px] w-[110px]  md:h-[400px] md:w-[400px] rounded-[50%]
 }

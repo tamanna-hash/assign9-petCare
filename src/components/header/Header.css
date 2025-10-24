@@ -44,12 +44,10 @@
     transform: translateY(0%);
   }
 }
-
 .animate-slide {
-  height: 450px;
+  /* height: 450px; */
   width: 100%; /* total 4 images */
   /* animation: slide 20s infinite ease-in-out; */
   animation: slide 20s infinite ease-in-out;
 }
-
 

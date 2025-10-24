@@ -36,8 +36,8 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className='flex gap-2 items-center'>
-                        <img src={logo2} alt="" className='h-[40px] w-[40px] rounded-[50%] animate__animated animate__bounce' />
-                        <Link to='/home' className="text-xl fredoka font-bold text-blue-400">PawfectCare</Link>
+                        <img src={logo2} alt="" className='md:h-[40px] md:w-[40px] h-[20px] w-[20px] rounded-[50%] animate__animated animate__bounce' />
+                        <Link to='/home' className="md:text-xl fredoka font-bold text-blue-400">PawfectCare</Link>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -60,17 +60,17 @@ const Navbar = () => {
                                     />
                                 </div>
                             </div>
-                            <button onClick={handleLogOut} className="btn px-5  hover:bg-blue-200  bg-blue-100 text-blue-500 ">
+                            <button onClick={handleLogOut} className="btn md:px-5  hover:bg-blue-200  bg-blue-100 text-blue-500 ">
                                 LogOut
                             </button>
                         </div>
 
                     ) : (
                         <>
-                            <button className="btn px-5  hover:bg-blue-200  bg-blue-100 font-semibold text-blue-500 ">
+                            <button className="btn btn-xs md:btn-md md:px-5  hover:bg-blue-200  bg-blue-100 font-semibold text-blue-500 ">
                                 <Link to='/auth/login'>Login</Link>
                             </button>
-                            <button className="btn px-5  hover:bg-blue-200  bg-blue-100 font-semibold text-blue-500 ">
+                            <button className="btn btn-xs md:btn-md md:px-5  hover:bg-blue-200  bg-blue-100 font-semibold text-blue-500 ">
                                 <Link to='/auth/signup'>SignUp</Link>
                             </button>
                         </>
