@@ -6,7 +6,7 @@
 The platform aims to make winter pet care simple, informative, and accessible, helping pet owners provide the best care for their pets during colder months.
 
 ## Live URL
-[Insert your live site URL here]
+t-petcare.netlify.app
 
 ## Key Features
 - **User Authentication**  
