@@ -1,16 +1,52 @@
-# React + Vite
+# Winter Paws: Your Cozy Winter Companion for Pets 🐾❄️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Purpose
+**Winter Paws** is a cozy winter companion platform designed for pet owners to ensure their furry friends stay warm, safe, and healthy during the cold season. Users can explore local pet care services, winter pet clothing, grooming options, and expert tips — all in one friendly and intuitive interface.
 
-Currently, two official plugins are available:
+The platform aims to make winter pet care simple, informative, and accessible, helping pet owners provide the best care for their pets during colder months.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live URL
+[Insert your live site URL here]
 
-## React Compiler
+## Key Features
+- **User Authentication**  
+  Sign up, login, and password reset using Firebase Authentication (email/password + Google Sign-In).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Private Routes**  
+  Secure pages like user profile and service details accessible only to logged-in users.
 
-## Expanding the ESLint configuration
+- **Pet Care Services**  
+  Browse winter-specific services like grooming, coat fitting, and other care options.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Service Details**  
+  View detailed information about each service, including provider name, email pricing and ratings.
+
+- **Winter Tips & Advice**  
+  Access expert tips to keep pets safe, warm, and healthy during winter.
+
+- **Responsive Design**  
+  Fully responsive UI for mobile and desktop users.
+
+- **Loading States & Hydration Fallbacks**  
+  Smooth experience with loading spinners during route changes and page refresh.
+
+- **Google Authentication Integration**  
+  Quick sign-in or sign-up using Google accounts.
+
+## NPM Packages Used
+- `react` & `react-dom` – Core React libraries  
+- `react-router-dom` – Routing and navigation  
+- `firebase` – Authentication and backend integration  
+- `react-hot-toast` – User notifications and alerts  
+- `react-icons` – Icon library (e.g., password visibility toggles)  
+- `lucide-react` – Lightweight React icons  
+- `tailwindcss` – Styling framework for responsive design  
+- `daisyui` – Tailwind-based UI components  
+- `aos` – Animate on scroll library  
+- `animate.css` – CSS animation library  
+- `react-spring` – Animation library for interactive components  
+- `react-scripts` or `vite` – Development tooling (depending on your setup)
+
+
+## Installation
+   git clone https://github.com/programming-hero-web-course2/b12-a9-firesheild-tamanna-hash/tree/main/

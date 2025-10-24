@@ -36,7 +36,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className='flex gap-2 items-center'>
-                        <img src={logo2} alt="" className='h-[40px] w-[40px] rounded-[50%] animate__animated animate__fadeIn' />
+                        <img src={logo2} alt="" className='h-[40px] w-[40px] rounded-[50%] animate__animated animate__bounce' />
                         <Link to='/home' className="text-xl fredoka font-bold text-blue-400">PawfectCare</Link>
                     </div>
                 </div>

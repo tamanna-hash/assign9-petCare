@@ -8,11 +8,11 @@ import Best from '../components/Best';
 const Home = () => {
     return (
         <div className=''>
-            {/* <Header></Header> */}
-            <Services></Services>
-            {/* <Tips></Tips> */}
-            {/* <Experts></Experts> */}
-            {/* <Best></Best> */}
+            <Header />
+            <Services />
+            <Tips />
+            <Best />
+            <Experts />
         </div>
     );
 };

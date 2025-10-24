@@ -14,7 +14,7 @@ const Footer = () => {
                         <Link to='/home' className="text-xl fredoka font-bold text-blue-400">PawfectCare</Link>
                     </div>
                     <div className='text-gray-700 flex gap-2'>
-                        <div className='flex items-center gap-2 text-sm text-blue-800'>
+                        <div className='flex items-center gap-2 text-sm text-gray-500'>
                             <a className="link link-hover">Contact info</a>
                             <a className="link link-hover">Privacy policy</a>
                             <a className="link link-hover">Cookie policy</a>

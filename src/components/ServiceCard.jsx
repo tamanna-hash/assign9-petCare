@@ -14,9 +14,9 @@ const ServiceCard = ({ service }) => {
     }, []);
     return (
         <div data-aos="zoom-in">
-            <div className="card h-[300px] w-[300px] md:h-[310px] md:w-[310px] rounded-[50%] bg-[#E5EEFF] shadow-sm hover:scale-103 p-1 md:p-2 1s ease-in-out ">
+            <div className="card h-[300px] w-[300px] md:h-[315px] md:w-[315px] rounded-[50%] bg-[#E5EEFF] shadow-sm hover:scale-103 p-1 md:p-2 1s ease-in-out ">
                 <figure>
-                    <img className='h-[70px] w-[70px] md:h-[80px] md:w-[80px] rounded-[50%]'
+                    <img className='h-[70px] w-[70px] md:h-[90px] md:w-[90px] rounded-[50%]'
                         src={image}
                         alt="Shoes" />
                 </figure>
