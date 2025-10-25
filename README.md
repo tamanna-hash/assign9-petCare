@@ -45,7 +45,7 @@ t-petcare.netlify.app
 - `aos` – Animate on scroll library  
 - `animate.css` – CSS animation library  
 - `react-spring` – Animation library for interactive components  
-- `react-scripts` or `vite` – Development tooling (depending on your setup)
+- `vite` – Development tooling 
 
 
 ## Installation
