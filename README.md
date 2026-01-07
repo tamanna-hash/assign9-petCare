@@ -1,7 +1,7 @@
 # PawfectCare: Your Cozy Winter Companion for Pets 🐾❄️
 <img src="https://i.ibb.co.com/6RHrRGN5/pawfectcare.png" height="300px" width="400px" alt="website-demo">
 ## Project Purpose
-**Winter Paws** is a cozy winter companion platform designed for pet owners to ensure their furry friends stay warm, safe, and healthy during the cold season. Users can explore local pet care services, winter pet clothing, grooming options, and expert tips — all in one friendly and intuitive interface.
+**Pawfect Care** is a cozy winter companion platform designed for pet owners to ensure their furry friends stay warm, safe, and healthy during the cold season. Users can explore local pet care services, winter pet clothing, grooming options, and expert tips — all in one friendly and intuitive interface.
 
 The platform aims to make winter pet care simple, informative, and accessible, helping pet owners provide the best care for their pets during colder months.
 
@@ -49,4 +49,4 @@ t-petcare.netlify.app
 
 
 ## Installation
-   git clone https://github.com/programming-hero-web-course2/b12-a9-firesheild-tamanna-hash/tree/main/
+  https://github.com/tamanna-hash/assign9-petCare.git
