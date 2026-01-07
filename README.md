@@ -1,4 +1,4 @@
-# Winter Paws: Your Cozy Winter Companion for Pets 🐾❄️
+# PetCare: Your Cozy Winter Companion for Pets 🐾❄️
 
 ## Project Purpose
 **Winter Paws** is a cozy winter companion platform designed for pet owners to ensure their furry friends stay warm, safe, and healthy during the cold season. Users can explore local pet care services, winter pet clothing, grooming options, and expert tips — all in one friendly and intuitive interface.
